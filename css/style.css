@@ -1,0 +1,96 @@
+body {
+    background-color: hsl(47, 88%, 63%);
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+}
+
+html {
+    font-family: "Figtree", sans-serif;
+}
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    width: 350px;
+    border-radius: 10px;
+}
+
+@media (max-width: 767px) {
+    .card {
+        width: 300px;
+    }
+}
+
+.card .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.card .container .image-articles {
+    border-radius: 0 60px;
+    padding-bottom: 20px;
+}
+
+.card .container .tags {
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    padding-bottom: 20px;
+}
+
+.card .container .tags span {
+    background-color: hsl(47, 88%, 63%);
+    margin-right: 5px;
+    font-weight: 800;
+    text-align: center;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.card .container .published {
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.card .container .title {
+    font-weight: 800;
+    margin: 0;
+    
+}
+
+.card .container .title a {
+    text-decoration: none;
+    color: hsl(0, 0%, 7%);
+}
+
+.card .container .title a:active,
+.card .container .title a:hover {
+    color: hsl(47, 88%, 63%);
+}
+
+.card .container .content {
+    color: hsl(0, 0%, 42%);
+}
+
+.card .container .author {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.card .container .author img{
+    width: 40px;
+}
+
+.card .container .author span {
+    font-size: 16px;
+    font-weight: 800;
+
+}
